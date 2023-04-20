@@ -17,6 +17,12 @@ Node* Leaf::next() const {
     return 0;
 }
 
+// process a visitor
+void Leaf::accept(NodeVisitor& visitor) {
+
+    visitor.visit(this);
+}
+
 // current value
 int Leaf::value() const {
     return nodeValue;

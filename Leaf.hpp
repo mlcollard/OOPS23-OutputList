@@ -19,6 +19,9 @@ public:
     // next node
     Node* next() const override;
 
+    // process a visitor
+    void accept(NodeVisitor&) override;
+
     // current value
     int value() const override;
 

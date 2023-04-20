@@ -22,6 +22,9 @@ public:
     // current value
     int value() const override;
 
+    // process a visitor
+    void accept(NodeVisitor&) override;
+
     // destructor
     ~List() override;
 

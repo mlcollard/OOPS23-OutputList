@@ -24,6 +24,12 @@ int List::value() const {
     return 0;
 }
 
+// process a visitor
+void List::accept(NodeVisitor& visitor) {
+
+    visitor.visit(this);
+}
+
 // destructor
 List::~List() {
 
@@ -31,4 +37,3 @@ List::~List() {
     if (nextNode)
         delete nextNode;
 }
-

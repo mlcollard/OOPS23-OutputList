@@ -16,7 +16,7 @@ int main() {
 
     // output list
     OutputVisitor visitor;
-    visitor.visit(&list);
+    list.accept(visitor);
     std::cout << '\n';
 
     return 0;

@@ -34,8 +34,7 @@ void OutputVisitor::visit(List* list) {
 
         std::cout << "(";
 
-        // output the rest of the list
-        visit(list->next());
+        list->next()->accept(*this);
 
         std::cout << ")";
     }
