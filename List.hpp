@@ -19,9 +19,6 @@ public:
     // next node
     Node* next() const override;
 
-    // output
-    void output() const override;
-
     // current value
     int value() const override;
 

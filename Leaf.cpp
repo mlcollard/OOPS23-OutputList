@@ -17,11 +17,6 @@ Node* Leaf::next() const {
     return 0;
 }
 
-// output
-void Leaf::output() const {
-    std::cout << nodeValue;
-}
-
 // current value
 int Leaf::value() const {
     return nodeValue;

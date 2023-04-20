@@ -6,6 +6,7 @@
 
 #include "Leaf.hpp"
 #include "List.hpp"
+#include "OutputVisitor.hpp"
 #include <iostream>
 
 int main() {
@@ -14,7 +15,8 @@ int main() {
     List list(new List(new List(new Leaf(1))));
 
     // output list
-    list.output();
+    OutputVisitor visitor;
+    visitor.visit(&list);
     std::cout << '\n';
 
     return 0;

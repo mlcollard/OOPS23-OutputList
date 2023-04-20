@@ -18,20 +18,6 @@ Node* List::next() const {
     return nextNode;
 }
 
-// output
-void List::output() const {
-
-    // output rest of list wrapped with parentheses
-    if (nextNode) {
-
-        std::cout << "(";
-
-        nextNode->output();
-
-        std::cout << ")";
-    }
-}
-
 // current value
 int List::value() const {
 
